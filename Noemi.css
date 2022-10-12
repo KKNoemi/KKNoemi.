@@ -1,7 +1,7 @@
-body { background-color: rgb(253, 224, 222); 
+body { background-color: rgba(255, 174, 250, 0.267); 
 }
  h1 { 
-  text-align: center; color: rgb(0, 0, 0);
+  text-align: center; color: rgba(0, 0, 0, 0.787);
   font-style: oblique;
  }
 
@@ -20,7 +20,7 @@ body { background-color: rgb(253, 224, 222);
 }
 
 .btn-1{
-  background: rgb(255, 188, 188);
+  background: rgb(231, 231, 231);
   color: rgb(255, 170, 170);
   border-radius: 30px;
   transition: transform 0.3s ease;
@@ -63,7 +63,7 @@ body { background-color: rgb(253, 224, 222);
   content:"";
   position: absolute;
   opacity: 0.3;
-  background: rgb(77,77, 77);
+  background: rgb(44, 114, 155);
   border-radius: inherit;
   width: 100%;
   height: 100%;
@@ -95,7 +95,7 @@ body { background-color: rgb(253, 224, 222);
   content:"";
   position: absolute;
   opacity: 0.3;
-  background: rgb(77, 77, 77);
+  background: rgb(128, 26, 141);
   border-radius: inherit;
   width: 100%;
   height: 100%;
