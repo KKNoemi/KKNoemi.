@@ -1,0 +1,24 @@
+<button onclick="f()">Katt</button>
+<div id="x"></div>
+<script>
+    function lnko(a, b) {
+        if (a < b) [a, b] = [b, a]
+        return a == b ? a : lnko(a-b, b) 
+    }
+    function f() {
+        do {
+            a = Math.round(Math.random()*10000 + 3)
+            b = Math.round(Math.random()*10000 + 3)
+            c = Math.sqrt(a ** 2 + b ** 2)
+        } while (c != Math.round(c))
+        if (a > b) [a, b] = [b, a]
+        o = lnko(a, b)
+        document.getElementById("x").innerHTML = 
+        `${a / o}<sup>2</sup> + ${b / o}<sup>2</sup> = ${c / o}<sup>2</sup>`
+    }
+</script>
+<style>
+    div {
+        text-align: center;
+    }
+</style>
