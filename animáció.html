@@ -1,0 +1,46 @@
+<body>
+    <h1>Egy csodás animáció</h1>
+    <svg width="1500" height="700">
+        <circle id="x" cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
+    </svg>
+</body>
+
+<script>
+    x = 80
+    y = 80
+    xí = 1
+    yí = 1
+    setInterval( () => {
+        document.getElementById("x").setAttribute("cx", x)
+        document.getElementById("x").setAttribute("cy", y)
+        x += xí
+        y+= yí
+        if (x>640 || x < 60) xí = -xí
+        if (y>440 || y < 60) yí = -yí
+    }, 10)
+</script>
+
+<script>
+    x = 50
+    y = 350
+    xi = 1
+    yi = 0
+    setInterval(()=>{
+        x += xi
+        y += yi
+        if (x>950 || x<50) xi = -xi
+        if (y>650 || y<50) yi = -yi
+        yi += 0.01
+        document.getElementById("x").setAttribute("cx", x)
+        document.getElementById("x").setAttribute("cy", y)
+
+    },1)
+    function g(e) {
+        document.getElementById("f").setAttribute("cx", e.x)
+    }
+</script>
+
+<body bgcolor="pink"></body>
+ <div class="buttons">
+    <a href="index.html" class="btn btn-1">Vissza a főoldalra</a>
+    <link rel="stylesheet" href="animacio.css">
